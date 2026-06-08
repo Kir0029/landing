@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кирилл — AI Engineer & Python Developer</title>
+    <meta name="description" content="AI Engineer и Python Developer. Создаю автономных ИИ-агентов, автоматизации и AI-решения. Портфолио и контакты." />
+    <meta property="og:title" content="Кирилл — AI Engineer & Python Developer" />
+    <meta property="og:description" content="Создаю автономных ИИ-агентов и автоматизации, которые экономят время бизнеса." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- ═══ Particle Background ═══ -->
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <!-- ═══ Navbar ═══ -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar__container">
+        <a href="#" class="navbar__logo">Kirill.dev</a>
+        <div class="navbar__links">
+          <a href="#about" class="navbar__link">Обо мне</a>
+          <a href="#workflow" class="navbar__link">Подход</a>
+          <a href="#projects" class="navbar__link">Проекты</a>
+          <a href="#contact" class="navbar__link">Контакты</a>
+          <a href="#contact" class="navbar__cta">Связаться</a>
+        </div>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="navbar__mobile-menu" id="mobile-menu">
+        <a href="#about" class="navbar__link">Обо мне</a>
+        <a href="#workflow" class="navbar__link">Подход</a>
+        <a href="#projects" class="navbar__link">Проекты</a>
+        <a href="#contact" class="navbar__link">Контакты</a>
+        <a href="#contact" class="navbar__cta">Связаться</a>
+      </div>
+    </nav>
+
+    <!-- ═══ Hero ═══ -->
+    <section class="hero" id="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__name">
+            <span class="text-gradient" id="hero-name"></span>
+          </h1>
+          <div class="hero__role">
+            <span id="hero-role-text"></span><span class="hero__role-cursor"></span>
+          </div>
+          <p class="hero__description" id="hero-description"></p>
+          <div class="hero__actions">
+            <a href="#projects" class="hero__btn hero__btn--primary">
+              <span>Проекты</span>
+              <span>→</span>
+            </a>
+            <a href="#contact" class="hero__btn hero__btn--secondary">
+              <span>Связаться</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="hero__scroll">
+        <span>scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══ About ═══ -->
+    <section class="about" id="about">
+      <div class="about__container">
+        <div class="section-header reveal">
+          <span class="section-label">Обо мне</span>
+          <h2 class="section-title">Кто я и чем <span class="text-gradient">занимаюсь</span></h2>
+          <p class="section-subtitle">Превращаю сложные задачи в автономные системы, которые работают 24/7.</p>
+        </div>
+
+        <div class="about__content">
+          <div class="about__text reveal">
+            <p>
+              AI Engineer и Python Developer с бэкграундом в аналитике и информационной безопасности.
+              Специализируюсь на создании автономных ИИ-агентов на n8n/Make + LLM, которые работают с данными
+              безопасно (self-hosted).
+            </p>
+            <p>
+              Разрабатываю AI-решения на Python: от парсинга и API-интеграций до полноценных
+              торговых алгоритмов и RAG-систем с долгосрочной памятью.
+            </p>
+            <div class="about__highlight">
+              <div class="about__highlight-icon">🧠</div>
+              <div class="about__highlight-title">Ключевая ценность</div>
+              <div class="about__highlight-text">
+                Соединяю техническую реализацию (Python, API, Docker) с пониманием психологии пользователя —
+                боты не просто «отвечают», а ведут диалог, удерживают контекст и адаптируются.
+              </div>
+            </div>
+          </div>
+          <div class="about__avatar-wrapper reveal-right">
+            <div class="about__avatar">
+              <img src="/avatar.png" alt="Kirill" class="about__avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+              <span class="about__avatar-initials" style="display: none;">К</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="about__skills-title reveal">Навыки</h3>
+        <div class="skills-grid stagger-children" id="skills-grid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Workflow ═══ -->
+    <section class="workflow" id="workflow">
+      <div class="workflow__container">
+        <div class="section-header reveal">
+          <span class="section-label">Как я работаю</span>
+          <h2 class="section-title">Мой <span class="text-gradient">подход</span></h2>
+          <p class="section-subtitle">Системный подход от анализа до деплоя с использованием AI на каждом этапе.</p>
+        </div>
+
+        <div class="workflow__steps stagger-children" id="workflow-steps">
+          <!-- Filled by JS -->
+        </div>
+
+        <div class="workflow__ai reveal">
+          <div class="workflow__ai-header">
+            <span class="workflow__ai-icon">🤖</span>
+            <h3 class="workflow__ai-title">AI в моей работе</h3>
+          </div>
+          <p class="workflow__ai-description">
+            AI — мощный инструмент, который ускоряет разработку в 3-5 раз. Я использую его на каждом этапе:
+            от генерации кода до тестирования. Но контроль качества и архитектурные решения — всегда за мной.
+          </p>
+          <div class="workflow__ai-tools" id="ai-tools">
+            <!-- Filled by JS -->
+          </div>
+          <blockquote class="workflow__ai-quote" id="ai-quote"></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Projects ═══ -->
+    <section class="projects" id="projects">
+      <div class="projects__container">
+        <div class="section-header reveal">
+          <span class="section-label">Кейсы</span>
+          <h2 class="section-title">Мои <span class="text-gradient">проекты</span></h2>
+          <p class="section-subtitle">Реальные проекты, которые решают задачи и работают в продакшене.</p>
+        </div>
+
+        <div class="projects__grid stagger-children" id="projects-grid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Contact ═══ -->
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <div class="section-header reveal">
+          <span class="section-label">Контакты</span>
+          <h2 class="section-title">Давайте <span class="text-gradient">свяжемся</span></h2>
+          <p class="section-subtitle">Открыт для сотрудничества, проектов и интересных задач.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal-left">
+            <p class="contact__info-text">
+              Если у вас есть проект, идея или вопрос — напишите мне. Отвечаю в течение 24 часов.
+            </p>
+            <div class="contact__links" id="contact-links">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+
+          <div class="contact__form-wrapper reveal-right">
+            <form class="contact__form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-group__label" for="contact-name">
+                    Имя <span class="required">*</span>
+                  </label>
+                  <input
+                    class="form-group__input"
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    placeholder="Ваше имя"
+                    required
+                    autocomplete="name"
+                  />
+                  <span class="form-group__error" id="error-name"></span>
+                </div>
+                <div class="form-group">
+                  <label class="form-group__label" for="contact-phone">
+                    Телефон
+                  </label>
+                  <input
+                    class="form-group__input"
+                    type="tel"
+                    id="contact-phone"
+                    name="phone"
+                    placeholder="+7 (___) ___-__-__"
+                    autocomplete="tel"
+                  />
+                  <span class="form-group__error" id="error-phone"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-group__label" for="contact-email">
+                  Email <span class="required">*</span>
+                </label>
+                <input
+                  class="form-group__input"
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                  autocomplete="email"
+                />
+                <span class="form-group__error" id="error-email"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-group__label" for="contact-message">
+                  Сообщение <span class="required">*</span>
+                </label>
+                <textarea
+                  class="form-group__textarea"
+                  id="contact-message"
+                  name="message"
+                  placeholder="Расскажите о вашем проекте или задаче..."
+                  required
+                ></textarea>
+                <span class="form-group__error" id="error-message"></span>
+              </div>
+              <button type="submit" class="form__submit" id="form-submit">
+                <span class="spinner"></span>
+                <span class="form__submit-text">Отправить сообщение</span>
+              </button>
+              <div class="form__status" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Footer ═══ -->
+    <footer class="footer">
+      <div class="footer__container">
+        <span class="footer__text">© 2026 Все права защищены. Built with ❤️ and AI</span>
+        <div class="footer__links">
+          <a href="https://github.com/Kir0029" target="_blank" rel="noopener" class="footer__link">GitHub</a>
+          <a href="mailto:andrey.piskynov2006@gmail.com" class="footer__link">Email</a>
+        </div>
+        <a href="#hero" class="footer__back-to-top">
+          <span>↑</span>
+          <span>Наверх</span>
+        </a>
+      </div>
+    </footer>
+
+    <button class="chat-toggle" id="chat-toggle" aria-label="Открыть AI-чат">
+      <img src="/assistant.png" alt="AI Assistant" class="chat-toggle__img" />
+      <span class="chat-toggle__badge"></span>
+    </button>
+    <div class="chat-window" id="chat-window">
+      <div class="chat__header">
+        <div class="chat__header-info">
+          <img src="/assistant.png" alt="AI Assistant" class="chat__header-avatar" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;" />
+          <div>
+            <div class="chat__header-title">Спросите обо мне</div>
+            <div class="chat__header-status">онлайн</div>
+          </div>
+        </div>
+        <button class="chat__close" id="chat-close" aria-label="Закрыть чат">✕</button>
+      </div>
+      <div class="chat__messages" id="chat-messages">
+        <!-- Filled by JS -->
+      </div>
+      <div class="chat__typing" id="chat-typing">
+        <span class="chat__typing-dot"></span>
+        <span class="chat__typing-dot"></span>
+        <span class="chat__typing-dot"></span>
+      </div>
+      <div class="chat__input-area">
+        <input
+          class="chat__input"
+          type="text"
+          id="chat-input"
+          placeholder="Спросите о навыках, проектах..."
+          autocomplete="off"
+        />
+        <button class="chat__send" id="chat-send" aria-label="Отправить">
+          ➤
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
